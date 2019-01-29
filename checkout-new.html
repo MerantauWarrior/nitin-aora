@@ -1,0 +1,1223 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>11 hours</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,shrink-to-fit=no">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="csrf-token" content="Ghu1NUmwW5KOvLxhD0tCE07t2eoKvUGd8VCeI2th">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+        integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+  <link href="css/normalize.min.css" rel="stylesheet">
+  <link href="css/concated.css" rel="stylesheet">
+  <link href="css/style.css?v=201811072" rel="stylesheet">
+  <link href="css/custom.css?v=20181212" rel="stylesheet">
+  <link href="css/new-styles.css" rel="stylesheet">
+</head>
+<body>
+
+<header class="main-header">
+  <div class="main-header-mobile">
+    <div class="main-header-mobile__open">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <div class="main-header-mobile__close"></div>
+    <div class="main-header-mobile__logo"><img src="imgs/new-logo.svg" alt="aora"></div>
+    <div class="main-header-mobile__menu">
+      <div class="main-header-mobile__menu-block">
+        <a href="#" class="main-header-mobile__menu-link js_open_modal" data-modal="#login_modal">LOG IN | SIGN UP</a>
+      </div>
+      <div class="main-header-mobile__menu-block">
+        <a href="https://aora.cf" class="main-header-mobile__menu-link">HOME</a>
+        <a href="how-aora-work" class="main-header-mobile__menu-link">HOW AORA WORKS</a>
+        <a href="about" class="main-header-mobile__menu-link">ABOUT US</a>
+        <a class="main-header-mobile__menu-link" href="user/invite">REFER A FRIEND</a>
+      </div>
+      <div class="main-header-mobile__menu-block">
+        <a href="setting" class="main-header-mobile__menu-link">MY ACCOUNT</a>
+        <a href="orders" class="main-header-mobile__menu-link">ORDERS</a>
+      </div>
+      <div class="main-header-mobile__menu-block">
+        <a href="contact" class="main-header-mobile__menu-link">CONTACT US</a>
+      </div>
+    </div>
+  </div>
+  <ul class="page-header__top-list">
+    <li class="page-header__item js_open_modal" data-modal="#login_modal">
+      <a href="#" class="page-header__account"><span class="page-header__menu-text">Log In | Sign Up</span></a>
+    </li>
+    <li class="page-header__item">
+      <a class="page-header__orders" href="cart"><span class="page-header__menu-text">Orders</span></a>
+    </li>
+    <li class="page-header__item">
+      <a class="page-header__link  page-header__link--cart" href="cart">Cart<span
+              class="page-header__indicator">0</span></a>
+    </li>
+    <li class="page-header__item hide-mobile">
+      <a href="contact" class="page-header__contact"><span class="page-header__menu-text">Contact Us</span></a>
+    </li>
+  </ul>
+  <div class="main-header__controls">
+    <div class="main-header__logo"><a href="https://aora.cf"><img src="imgs/new-logo.svg" alt="aora"></a></div>
+    <nav class="main-header__menu">
+      <a class="main-header__menu-link" href="https://aora.cf">HOME</a>
+      <a class="main-header__menu-link " href="#how-aora-work">HOW AORA WORKS</a>
+    </nav>
+    <form id="header_search_form" class="main-header__search " method="post" action="result">
+      <input type="text" name="link" id="search" class="inp-main-header__search" placeholder="Paste Product URL Here">
+      <button type="submit" class="submit-main-header__search"></button>
+    </form>
+  </div>
+</header>
+
+<section class="new-checkout">
+  <div class="new-container">
+    <div class="block_checkout checkout">
+      <h1 class="checkout__title">Checkout</h1>
+      <div class="checkout__steps">
+        <div class="checkout__step" data-to="stepOne">
+          <div class="checkout__step-number">1</div>
+          <div class="checkout__step-name">Address</div>
+        </div>
+        <div class="checkout__step-divider"></div>
+        <div class="checkout__step checkout__step_active" data-to="stepTwo">
+          <div class="checkout__step-number">2</div>
+          <div class="checkout__step-name">Order Review</div>
+        </div>
+      </div>
+
+      <div class="tab-content">
+
+        <div class="block_section tab-pane checkout__tab" id="stepOne">
+          <h3 class="checkout__tab-title">Shipping Address</h3>
+          <div class="block_section__wrap text-center">
+            <div class="nav-tabs inline-layout">
+              <div class="item-tab active" data-tab="block_address_form"><span>Enter Address</span></div>
+              <div class="item-tab" data-tab="block_address_position"><span>Collect from POPStation</span></div>
+            </div>
+            <div class="tab-wrap">
+              <div class="tab-content active" data-tab="block_address_form">
+                <form class="address_form">
+                  <div class="form-holder inline-layout">
+                    <label>First Name<span>*</span>:</label>
+                    <input type="text" placeholder="Andrea" data-validate="name">
+                  </div>
+                  <div class="form-holder inline-layout">
+                    <label>Last Name<span>*</span>:</label>
+                    <input type="text" placeholder="Gueil" data-validate="name">
+                  </div>
+                  <div class="form-holder inline-layout">
+                    <label>Postal Code<span>*</span>:</label>
+                    <input type="text" placeholder="Enter Zipcode" data-validate="zip_code">
+                  </div>
+                  <div class="form-holder inline-layout">
+                    <label>Address 1<span>*</span>:</label>
+                    <input type="text" value="" placeholder="Required" data-validate="default">
+                  </div>
+                  <div class="form-holder inline-layout">
+                    <label>Address 2:</label>
+                    <input type="text" placeholder="Optional" data-validate="empty">
+                  </div>
+                  <div class="form-holder inline-layout">
+                    <label>Country<span>*</span>:</label>
+                    <input type="text" placeholder="Enter Country" data-validate="default">
+                  </div>
+                  <div class="form-holder inline-layout">
+                    <label>City<span>*</span>:</label>
+                    <input type="text" placeholder="Enter City" data-validate="default">
+                  </div>
+                  <div class="form-holder inline-layout">
+                    <label>Phone<span>*</span>:</label>
+                    <div class="field-phone">
+                      <span>+65</span>
+                      <input type="text" placeholder="8765 4321" data-validate="number">
+                    </div>
+                  </div>
+                  <p class="label_required">*Required Fields</p>
+                  <div class="form-holder checkbox">
+                    <input type="checkbox" id="checkbox_primary" data-validate="">
+                    <label for="checkbox_primary">Make this my primary shipping address</label>
+                  </div>
+                  <div class="form-holder checkbox">
+                    <input type="checkbox" id="checkbox_billing" data-validate="">
+                    <label for="checkbox_billing">My billing address is different from my shipping address</label>
+                  </div>
+                </form>
+              </div>
+              <div class="tab-content " data-tab="block_address_position">
+                <form class="form_map">
+                  <div class="form-holder inline-layout">
+                    <input type="text" value="" placeholder="Enter postal code">
+                    <button>Search</button>
+                  </div>
+                  <div class="list_position inline-layout text-center">
+                    <div class="item">
+                      <input type="radio" name="radio_position" value="Central" id="pos1">
+                      <label for="pos1">Central</label>
+                    </div>
+                    <div class="item">
+                      <input type="radio" name="radio_position" value="East" id="pos2">
+                      <label for="pos2">East</label>
+                    </div>
+                    <div class="item">
+                      <input type="radio" name="radio_position" value="North" id="pos3">
+                      <label for="pos3">North</label>
+                    </div>
+                    <div class="item">
+                      <input type="radio" name="radio_position" value="North-East" id="pos4">
+                      <label for="pos4">North-East</label>
+                    </div>
+                    <div class="item">
+                      <input type="radio" name="radio_position" value="West" id="pos5">
+                      <label for="pos5">West</label>
+                    </div>
+                  </div>
+                  <div id="map"></div>
+                  <p>By selecting POPStation as my shipping address, I hereby acknowledge and accept the Terms and
+                    Conditions governing the use of POPStation.</p>
+                </form>
+              </div>
+            </div>
+            <div class="checkout__tab-step-go checkout__tab-step-go--review clear">
+              <div class="checkout__next-step" data-to="stepTwo">Continue to <b>Shipping Options</b></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="block_section tab-pane active checkout__tab" id="stepTwo">
+          <h3 class="checkout__tab-title">Order Review</h3>
+          <div class="block_section__wrap text-center">
+
+            <div class="checkout-page-products">
+              <div class="orders-page-product clear">
+                <div class="orders-page-product__image">
+                  <img src="img/product-image.png">
+                </div>
+                <div class="orders-page-product__text">
+                  <div class="orders-page-product__name">Echo (2nd Generation) – Charcoal Fabric + Echo Dot</div>
+                  <a href="#" class="orders-page-product__link">From Amazon.com <span>(Link)</span></a>
+                  <div class="orders-page-product__props clear">
+                    <div class="orders-page-product__prop">Black</div>
+                    <div class="orders-page-product__prop">Echo + Echo Dot(Black)</div>
+                  </div>
+                  <div class="orders-page-product__info">
+                    <div class="orders-page-product__general">
+                      <div class="orders-page-product__qty">Qty: 1</div>
+                      <div class="orders-page-product__measures">Est. Actual Weight: 1.5kg | Dimensions: 42 x 32 x 32
+                        cm
+                      </div>
+                    </div>
+                    <div class="orders-page-product__prices">
+                      <div class="orders-page-product__price">SGD 173.64</div>
+                      <div class="orders-page-product__discont">(USD 129.98)</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="orders-page-product clear">
+                <div class="orders-page-product__image">
+                  <img src="img/product-image.png">
+                </div>
+                <div class="orders-page-product__text">
+                  <div class="orders-page-product__name">Echo (2nd Generation) – Charcoal Fabric + Echo Dot</div>
+                  <a href="#" class="orders-page-product__link">From Amazon.com <span>(Link)</span></a>
+                  <div class="orders-page-product__props clear">
+                    <div class="orders-page-product__prop">Black</div>
+                    <div class="orders-page-product__prop">Echo + Echo Dot(Black)</div>
+                  </div>
+                  <div class="orders-page-product__info">
+                    <div class="orders-page-product__general">
+                      <div class="orders-page-product__qty">Qty: 1</div>
+                      <div class="orders-page-product__measures">Est. Actual Weight: 1.5kg | Dimensions: 42 x 32 x 32
+                        cm
+                      </div>
+                    </div>
+                    <div class="orders-page-product__prices">
+                      <div class="orders-page-product__price">SGD 173.64</div>
+                      <div class="orders-page-product__discont">(USD 129.98)</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="orders-page-product clear">
+                <div class="orders-page-product__image">
+                  <img src="img/product-image.png">
+                </div>
+                <div class="orders-page-product__text">
+                  <div class="orders-page-product__name">Echo (2nd Generation) – Charcoal Fabric + Echo Dot</div>
+                  <a href="#" class="orders-page-product__link">From Amazon.com <span>(Link)</span></a>
+                  <div class="orders-page-product__props clear">
+                    <div class="orders-page-product__prop">Black</div>
+                    <div class="orders-page-product__prop">Echo + Echo Dot(Black)</div>
+                  </div>
+                  <div class="orders-page-product__info">
+                    <div class="orders-page-product__general">
+                      <div class="orders-page-product__qty">Qty: 1</div>
+                      <div class="orders-page-product__measures">Est. Actual Weight: 1.5kg | Dimensions: 42 x 32 x 32
+                        cm
+                      </div>
+                    </div>
+                    <div class="orders-page-product__prices">
+                      <div class="orders-page-product__price">SGD 173.64</div>
+                      <div class="orders-page-product__discont">(USD 129.98)</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="new-checkout-weight-info">
+                <div class="new-checkout-weight-total">
+                  <div class="new-checkout-weight-total__title">Total Chargeable Weight (Min. 500g)</div>
+                  <div class="new-checkout-weight-total__numbers">
+                    <div class="new-checkout-weight-total__numbers-item">Actual Weight: <span>1.5kg</span></div>
+                    <div class="new-checkout-weight-total__numbers-item">Volumetric Weight: <span>2.42kg</span></div>
+                  </div>
+                </div>
+                <div class="new-checkout-weight-text">
+                  <div class="new-checkout-weight-text__icon">?</div>
+                  <div class="new-checkout-weight-text__content">The weight reflected above is an estimate, and acts as
+                    a maximum cap. If it arrives at our warehouse with a weight difference greater than 500g, automatic
+                    refunds will be given. (Does not apply to purchases made with cryptocurrency)
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="block_section__wrap shipping_method">
+              <form>
+                <div class="checkout-order-review-divider"></div>
+                <div class="new-checkout-shipping__title">Available Shipping Option(s)</div>
+                <div class="list_shipping inline-layout">
+                  <div class="form-holder">
+                    <input type="radio" value="Standard Shipping" id="standard" name="shipping" checked>
+                    <label for="standard">
+                      <span class="name">Standard Shipping</span>
+                      <span class="price">SGD 24.00</span>
+                      <div class="new-checkout-shipping-type">
+                        <div class="new-checkout-shipping-type__item">
+                          8 - 13 days
+                          <div class="new-checkout-review-total-help">
+                            <div class="new-checkout-review-total-help__icon">i</div>
+                            <div class="new-checkout-review-total-help__text">includes domestic and international
+                              shipping
+                            </div>
+                          </div>
+                        </div>
+                        <div class="new-checkout-shipping-type__item">Chargeable weight: 1.5kg</div>
+                      </div>
+                    </label>
+                  </div>
+                  <div class="form-holder">
+                    <input type="radio" value="Economy Shipping" id="economy" name="shipping">
+                    <label for="economy">
+                      <span class="name">Economy Shipping</span>
+                      <span class="price">SGD 24.00</span>
+                      <div class="new-checkout-shipping-type">
+                        <div class="new-checkout-shipping-type__item">
+                          8 - 13 days
+                          <div class="new-checkout-review-total-help">
+                            <div class="new-checkout-review-total-help__icon">i</div>
+                            <div class="new-checkout-review-total-help__text">includes domestic and international
+                              shipping
+                            </div>
+                          </div>
+                        </div>
+                        <div class="new-checkout-shipping-type__item">Chargeable weight: 1.5kg</div>
+                      </div>
+                    </label>
+                  </div>
+                </div>
+
+                <div class="new-checkout-review-general">
+                  <div class="new-checkout-review-total">
+                    <div class="checkout-review-total__inner">
+                      <div class="checkout-review-total__items">
+                        <div class="checkout-review-total__item clear">
+                          <div class="checkout-review-total__item-name">Product Cost</div>
+                          <div class="checkout-review-total__item-value">SGD 893.38</div>
+                        </div>
+                        <div class="checkout-review-total__item clear">
+                          <div class="checkout-review-total__item-name chrt-expand">All-in Shipping Fees</div>
+                          <div class="checkout-review-total__item-value">SGD 34.00</div>
+                          <div class="checkout-review-total__subitems">
+                            <div class="checkout-review-total__subitem clear">
+                              <div class="checkout-review-total__subitem-name">Domestic Shipping Fees</div>
+                              <div class="checkout-review-total__subitem-value">SGD 10.00</div>
+                            </div>
+                            <div class="checkout-review-total__subitem clear">
+                              <div class="checkout-review-total__subitem-name">International Shipping Fees</div>
+                              <div class="checkout-review-total__subitem-value">SGD 24.00</div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="checkout-review-total__item clear">
+                          <div class="checkout-review-total__item-name">
+                            Agent Fee (4%)
+                            <div class="new-checkout-review-total-help">
+                              <div class="new-checkout-review-total-help__icon">i</div>
+                              <div class="new-checkout-review-total-help__text">A 7% GST charge is chargeable if the
+                                total bill is above SGD 400.00
+                              </div>
+                            </div>
+                          </div>
+                          <div class="checkout-review-total__item-value">SGD 25.20</div>
+                        </div>
+                        <div class="new-checkout-review-promocode clear">
+                        <!--<div class="new-checkout-review-promocode new-checkout-review-promocode__apply clear">-->
+                        <!--<div class="new-checkout-review-promocode new-checkout-review-promocode__fail clear">-->
+                          <input type="text" name="q1" id="q1" class="new-checkout-review-promocode__inp"
+                                 placeholder="Enter AORA Promo Code">
+                          <button class="new-checkout-review-promocode__btn">Apply</button>
+                          <!--<button class="new-checkout-review-promocode__btn">Apply <span></span></button>-->
+                          <div class="new-checkout-review-promocode__text">20% off shipping fee and agent fee</div>
+                        </div>
+                        <div class="checkout-review-total__item clear">
+                          <div class="checkout-review-total__item-name"><b>Subtotal</b></div>
+                          <div class="checkout-review-total__item-value"><b>SGD 952.58</b></div>
+                        </div>
+                        <div class="checkout-review-total__item clear">
+                          <div class="checkout-review-total__item-name">
+                            Duties & Taxes
+                            <div class="new-checkout-review-total-help">
+                              <div class="new-checkout-review-total-help__icon">i</div>
+                              <div class="new-checkout-review-total-help__text">A 7% GST charge is chargeable if the
+                                total bill is above SGD 400.00
+                              </div>
+                            </div>
+                          </div>
+                          <div class="checkout-review-total__item-value">SGD 0.30</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="new-checkout-review-total__sum">
+                      <div class="checkout-review-total__item clear">
+                        <div class="checkout-review-total__item-name"><b>Total Payable</b></div>
+                        <div class="checkout-review-total__item-value"><b>SGD 372.32</b></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="new-checkout-review-payment">
+                    <div class="new-checkout-review-payment__controls clear">
+                      <div
+                              class="new-checkout-review-payment__controls-item new-checkout-review-payment__controls-item_active"
+                              data-pay-method="Stripe">Stripe
+                      </div>
+                      <div class="new-checkout-review-payment__controls-item" data-pay-method="Coinpayment">
+                        Coinpayment
+                      </div>
+                      <div class="new-checkout-review-payment__controls-item" data-pay-method="Paypal">Paypal</div>
+                    </div>
+                    <div class="new-checkout-review-payment__content">
+                      <div class="new-checkout-review-payment__stripe new-checkout-review-payment__tab
+                              new-checkout-review-payment__tab_active" id="Stripe">
+                        <a href="#" class="new-checkout-review-payment__pay-btn">Pay by Credit/Debit Card</a>
+                        <div class="new-checkout-review-payment__small-text">* A payment gateway fee of 3.4% + SGD 0.50
+                          applies
+                        </div>
+                      </div>
+                      <div class="new-checkout-review-payment__crypto new-checkout-review-payment__tab"
+                           id="Coinpayment">
+                        <div class="new-checkout-review-payment__text">Select Preferred Currency:</div>
+                        <select name="crypto" id="crypto" class="new-checkout-review-payment__crypto-select">
+                          <option value="1">Bitcoin</option>
+                          <option value="2">Mycoin</option>
+                          <option value="3">Yourcoin</option>
+                        </select>
+                        <div class="new-checkout-review-payment__text">Total Payable in BTC: <b>0.117035</b></div>
+                        <div class="new-checkout-review-payment__small-text">Applicable Exchange Rate ( 1 USD = 0.00027
+                          BTC)
+                        </div>
+                        <a href="#" class="new-checkout-review-payment__pay-btn">Pay by CoinPayment</a>
+                        <div class="new-checkout-review-payment__small-text">* A 0.5% payment gateway fee applies<br>
+                          **Any refunds, if necessary, will be done through Bitcoin with an<br> exchange rate fixed at
+                          the point of this transaction
+                        </div>
+                      </div>
+                      <div class="new-checkout-review-payment__stripe new-checkout-review-payment__tab" id="Paypal">
+                        <a href="#" class="new-checkout-review-payment__pay-btn">Pay by Paypal</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="new-checkout-review-agreement">
+                    <input type="checkbox" checked name="checkout-agreement" id="checkout-agreement"
+                           class="new-checkout-review-agreement__inp">
+                    <label for="checkout-agreement" class="new-checkout-review-agreement__label"></label>
+                    <div class="new-checkout-review-agreement__text">I have read and agreed that all international
+                      orders (orders from countries other than Singapore) are subject to applicable customs, import
+                      duties and taxes, and is the sole responsibility of the customer. AORA is not responsible for fees
+                      associated with import. I have also ensured that the products in my cart do not contain items with
+                      loose batteries, and comply with the applicable prohibitions or restrictions set by my local
+                      customs office.
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="new-checkout__tab-step-go">
+      <div class="checkout__tab-step-go checkout__tab-step-go--review clear">
+        <div class="checkout__prev-step" data-to="stepOne">Go Back to <b>Address</b></div>
+        <!--<div class="checkout__next-step" data-to="stepThree">Continue to <b>Payment</b></div>-->
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<footer class="new-footer">
+  <div class="new-footer__inner">
+    <div class="new-footer__menu">
+      <div class="new-footer__menu-item">
+        <div class="new-footer-title">help</div>
+        <ul class="new-footer__menu-list">
+          <li class="new-footer__menu-list-item"><a href="#" class="new-footer__menu-link">FAQs</a></li>
+          <li class="new-footer__menu-list-item"><a href="#" class="new-footer__menu-link">Prohibited Items</a></li>
+          <li class="new-footer__menu-list-item"><a href="#" class="new-footer__menu-link">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="new-footer__menu-item">
+        <div class="new-footer-title">company</div>
+        <ul class="new-footer__menu-list">
+          <li class="new-footer__menu-list-item"><a href="#" class="new-footer__menu-link">About Us</a></li>
+          <li class="new-footer__menu-list-item"><a href="#" class="new-footer__menu-link">Blog</a></li>
+          <li class="new-footer__menu-list-item"><a href="#" class="new-footer__menu-link">Merchant Directory</a></li>
+          <li class="new-footer__menu-list-item"><a href="#" class="new-footer__menu-link">Privacy Policy</a></li>
+          <li class="new-footer__menu-list-item"><a href="#" class="new-footer__menu-link">Terms & Conditions</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="new-footer__icons">
+      <div class="new-footer__icons-join">
+        <div class="new-footer-title">join our community</div>
+        <div class="new-footer__icons-join-items">
+          <a href="#" class="new-footer__icons-join-item">
+            <img src="imgs/footer/fb.svg" alt="facebook">
+          </a>
+          <a href="#" class="new-footer__icons-join-item">
+            <img src="imgs/footer/insta.svg" alt="instagram">
+          </a>
+          <a href="#" class="new-footer__icons-join-item">
+            <img src="imgs/footer/medium.svg" alt="medium">
+          </a>
+          <a href="#" class="new-footer__icons-join-item">
+            <img src="imgs/footer/reddit.svg" alt="reddit">
+          </a>
+        </div>
+      </div>
+      <div class="new-footer__icons-payment">
+        <div class="new-footer-title">our payment partners:</div>
+        <div class="new-footer__icons-payment-items">
+          <a href="#" class="new-footer__icons-payment-item"><img src="imgs/footer/stripe.svg" alt="stripe"></a>
+          <a href="#" class="new-footer__icons-payment-item"><img src="imgs/footer/bit.svg" alt="bit"></a></br>
+          <a href="#" class="new-footer__icons-payment-item"><img src="/imgs/footer/coin.svg" alt="coin"></a>
+        </div>
+      </div>
+      <div class="new-footer__icons-powered">
+        <div class="new-footer-title">powered by:</div>
+        <a href="#" class="new-footer__icons-powered-item">
+          <img src="imgs/footer/singapore.svg" alt="singapore post">
+        </a>
+      </div>
+    </div>
+    <div class="new-footer__accept">
+      <div class="new-footer-title">we accept:</div>
+      <div class="new-footer__accept-items">
+        <a href="#" class="new-footer__accept-item"><img src="imgs/footer/wa1.svg" alt="pay-name"></a>
+        <a href="#" class="new-footer__accept-item"><img src="imgs/footer/wa2.svg" alt="pay-name"></a>
+        <a href="#" class="new-footer__accept-item"><img src="imgs/footer/wa3.svg" alt="pay-name"></a>
+        <a href="#" class="new-footer__accept-item"><img src="imgs/footer/wa4.svg" alt="pay-name"></a>
+        <a href="#" class="new-footer__accept-item"><img src="imgs/footer/wa5.svg" alt="pay-name"></a>
+        <a href="#" class="new-footer__accept-item"><img src="imgs/footer/wa6.svg" alt="pay-name"></a>
+        <a href="#" class="new-footer__accept-item"><img src="imgs/footer/wa7.svg" alt="pay-name"></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<section class="slide-menu">
+  <ul class="slide-menu__list">
+    <li class="slide-menu__item">
+      <button type="button" class="slide-menu__btn  slide-menu__btn--login" data-title="Account">Login
+      </button>
+    </li>
+
+    <!--<li class="slide-menu__item">-->
+    <!--<button type="button" class="slide-menu__btn  slide-menu__btn&#45;&#45;orders">Orders</button>-->
+    <!--</li>-->
+
+    <li class="slide-menu__item">
+      <button type="button" class="slide-menu__btn  slide-menu__btn--cart" data-title="Cart">Cart</button>
+      <div class="slide-menu__indicator">0</div>
+    </li>
+  </ul>
+
+  <div class="slide-menu__inner">
+
+    <div class="slide-menu__top-container">
+      <button class="slide-menu__btn-close" type="button">Close</button>
+    </div>
+
+  </div>
+</section>
+
+
+<section class="login-form  login-form--slide-menu">
+  <form method="post" action="login">
+    <input type="hidden" name="_token" value="Ghu1NUmwW5KOvLxhD0tCE07t2eoKvUGd8VCeI2th">
+
+    <div class="login-form__input-container">
+      <label>Email Address</label>
+      <input class="login-form__input" name="email" value="" type="email" placeholder="Enter your email" required>
+    </div>
+
+    <div class="login-form__input-container">
+      <div class="login-form__split-password">
+        <label>Password</label>
+        <a class="js_open_modal login-form__forgot-link" href="#" data-modal="#forgot_password">Forgot password?</a>
+      </div>
+      <input class="login-form__input" type="password" name="password" placeholder="Enter your password" required>
+    </div>
+
+    <label class="login-form__remember">
+      <input type="checkbox" name="remember">
+      <span class="login-form__remember__checkbox-indicator"></span>
+      Remember me?
+    </label>
+
+    <div class="login-form__btn-container">
+      <button class="login-form__submit" type="submit">Log In</button>
+
+      <a class="js_open_modal login-form__sign-up-link" href="" data-modal="#sign_up">Don’t have an account?</a>
+    </div>
+  </form>
+</section>
+
+<div class="cart  cart__slide-menu">
+  <span class="cart__notification visible_when_cart_empty" style="display:flex">Your cart is empty.</span>
+
+</div>
+
+<div class="modal_div hide" id="login_modal">
+
+  <div class="modal_close"></div>
+  <div class="content-holder">
+    <h3>Log Into My Account</h3>
+
+    <form method="post" action="login">
+      <input type="hidden" name="_token" value="Ghu1NUmwW5KOvLxhD0tCE07t2eoKvUGd8VCeI2th">
+
+
+      <div class="form-holder">
+        <label>Email Address</label>
+        <input name="email" value="" type="email" placeholder="Enter your email" required>
+        <span class="js_open_modal link_forgot_pass" data-modal="#resend_activation">Resend activation email?</span>
+      </div>
+
+      <div class="form-holder">
+        <label>Password</label>
+        <input type="password" name="password" placeholder="Enter password" required>
+        <span class="js_open_modal link_forgot_pass" data-modal="#forgot_password">Forgot password?</span>
+      </div>
+
+      <label class="form-holder checkbox">
+        <input type="checkbox" name="remember" id="remember">
+        <label for="remember">Remember me?</label>
+      </label>
+
+      <div class="block_button inline-layout">
+        <button class="submit">Log In</button>
+        <!--span class="text_or"><span>OR</span></span>
+
+        <a class="link_google" href="login/google"><span>Sign in with Google</span></a>
+        <a class="link_facebook" href="login/facebook"><span>Continue with Facebook</span></a-->
+      </div>
+    </form>
+
+    <div class="text-center inline-layout">
+      <p class="">Don’t have an account?</p>
+      <span class="js_open_modal link_sign_up" data-modal="#sign_up">Sign Up</span>
+    </div>
+
+  </div>
+</div>
+
+<div class="modal_div hide" id="forgot_password">
+  <div class="modal_close"></div>
+  <div class="content-holder">
+    <h3>Forgot your password?</h3>
+    <p class="text-center">Enter your email address below and we’ll send you the password reset link.</p>
+
+    <form method="post" action="password/email">
+      <input type="hidden" name="_token" value="Ghu1NUmwW5KOvLxhD0tCE07t2eoKvUGd8VCeI2th">
+      <div class="form-holder">
+        <label>Email Address</label>
+        <input type="email" name="email" value="" data-validate="email" placeholder="Enter your email" required/>
+      </div>
+      <div class="text-center">
+        <button class="submit">Request Reset Link</button>
+      </div>
+
+    </form>
+  </div>
+</div>
+
+<div class="modal_div hide" id="resend_activation">
+  <div class="modal_close"></div>
+  <div class="content-holder">
+    <h3>Resend activation email?</h3>
+    <p class="text-center">Enter your email address below and we’ll send you the activation email again.</p>
+
+    <form method="post" action="resend_activation">
+      <input type="hidden" name="_token" value="Ghu1NUmwW5KOvLxhD0tCE07t2eoKvUGd8VCeI2th">
+      <div class="form-holder">
+        <label>Email Address</label>
+        <input type="email" name="email" value="" data-validate="email" placeholder="Enter your email" required/>
+      </div>
+      <div class="text-center">
+        <button class="submit">Resend Activation Email</button>
+      </div>
+
+    </form>
+  </div>
+</div>
+
+<div class="modal_div hide" id="sign_up">
+  <div class="modal_close"></div>
+  <div class="content-holder">
+    <h3>Get Started</h3>
+
+    <form method="post" action="register">
+      <input type="hidden" name="_token" value="Ghu1NUmwW5KOvLxhD0tCE07t2eoKvUGd8VCeI2th">
+      <div class="form-holder">
+        <label>Invitation Code</label>
+        <input type="text" placeholder="Your invitation code" name="invitation_code" value="" required>
+      </div>
+      <div class="form-holder">
+        <label>Email Address</label>
+        <input type="email" placeholder="Your email address" name="email" value="" required>
+      </div>
+
+      <div class="form-holder">
+        <label>First Name</label>
+        <input type="text" name="f_name" value="" placeholder="Your first name" required>
+      </div>
+      <div class="form-holder">
+        <label>Last Name</label>
+        <input type="text" name="l_name" value="" placeholder="Your family name" required>
+      </div>
+
+
+      <div class="form-holder">
+        <label>Password</label>
+        <input autocomplete="off" style="border-radius: 8px 8px 0 0;" type="password" id="password" minlength="8"
+               name="password" data-validate="password" placeholder="Enter password 8+ characters" required>
+        <meter max="4" id="password-strength-meter"></meter>
+        <p id="password-strength-text"></p>
+      </div>
+
+      <div class="form-holder checkbox">
+        <input type="checkbox" id="sign_up_checkbox" data-validate="checkbox">
+        <label for="sign_up_checkbox">Receive exclusive AORA news &amp; updates in your mailbox </label>
+      </div>
+
+
+      <div class="text-center inline-layout">
+        <button id="register-btn" class="submit">Continue</button>
+        <div class="block_login_modal">
+          <span class="text_login">Already have an account?</span>
+          <span class="js_open_modal link_modal" data-modal="#login_modal">Log In</span>
+        </div>
+
+      </div>
+
+    </form>
+  </div>
+</div>
+<style>
+  meter {
+    /* Reset the default appearance */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+    margin: 0 auto 1em;
+    width: 100%;
+    height: 0.5em;
+
+    /* Applicable only to Firefox */
+    background: none;
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  meter::-webkit-meter-bar {
+    background: none;
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  meter[value="1"] {
+    background: red;
+  }
+
+  meter[value="2"] {
+    background: yellow;
+  }
+
+  meter[value="3"] {
+    background: orange;
+  }
+
+  meter[value="4"] {
+    background: green;
+  }
+
+  /* Webkit based browsers */
+  meter[value="1"]::-webkit-meter-optimum-value {
+    background: red;
+  }
+
+  meter[value="2"]::-webkit-meter-optimum-value {
+    background: yellow;
+  }
+
+  meter[value="3"]::-webkit-meter-optimum-value {
+    background: orange;
+  }
+
+  meter[value="4"]::-webkit-meter-optimum-value {
+    background: green;
+  }
+
+  /* Gecko based browsers */
+  meter[value="1"]::-moz-meter-bar {
+    background: red;
+  }
+
+  meter[value="2"]::-moz-meter-bar {
+    background: yellow;
+  }
+
+  meter[value="3"]::-moz-meter-bar {
+    background: orange;
+  }
+
+  meter[value="4"]::-moz-meter-bar {
+    background: green;
+  }
+</style>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/zxcvbn/4.2.0/zxcvbn.js"></script>
+<script>
+  var strength = {
+    0: "Worst",
+    1: "Bad",
+    2: "Weak",
+    3: "Good",
+    4: "Strong"
+  }
+  var password = document.getElementById('password');
+  var meter = document.getElementById('password-strength-meter');
+  var text = document.getElementById('password-strength-text');
+
+  password.addEventListener('input', function () {
+    check_password_sec();
+  });
+
+  function check_password_sec() {
+    var val = password.value;
+    var result = zxcvbn(val);
+    if (result.score < 2) {
+      $('#password-strength-text').css('color', 'red');
+      $('#register-btn').attr('disabled', 'true');
+      $('#register-btn').css('opacity', '0.5');
+    } else {
+      $('#password-strength-text').css('color', 'green');
+      $('#register-btn').css('opacity', '1');
+      $('#register-btn').removeAttr('disabled');
+    }
+
+    // Update the password strength meter
+    meter.value = result.score;
+
+    // Update the text indicator
+    if (val !== "") {
+      text.innerHTML = "Strength: " + strength[result.score];
+    } else {
+      text.innerHTML = "";
+    }
+  }
+</script>
+<div class="modal_div hide" id="download_invoice">
+  <div class="modal_close"></div>
+  <div class="content-holder">
+    <h3>Your invoice will be available soon</h3>
+    <p>Your final invoice will only be available once all your packages have reached our warehouse. This is done to
+      accurately weigh all packages and provide you with the correct shipping fees, service charge and final
+      invoice.</p>
+
+    <p>If AORA overestimates your shipping costs we will return you the difference once we have calculated the actual
+      shipping costs.</p>
+
+    <p>For more details, please view our help page.</p>
+    <a href="#" class="btn_green">Got it</a>
+  </div>
+</div>
+
+
+<div class="modal_div hide modal_img" id="return_money">
+  <div class="modal_close"></div>
+  <div class="content-holder">
+
+    <div class="image-holder">
+      <img src="img/girl_personal_concierge.jpeg">
+    </div>
+    <div class="block_text">
+      <div>
+        <h3>We might even return you some money</h3>
+        <p>AORA guarantees that we will not charge beyond the quoted price to you reflected on the checkout page.
+          Should the acutal shipping costs be higher than the estimated shipping costs stated in your quote, we will
+          absorb the difference. </p>
+        <a href="#" class="btn_green">Got it</a>
+      </div>
+
+    </div>
+
+  </div>
+</div>
+
+<div class="modal_div hide modal_img" id="hold_on">
+  <div class="modal_close"></div>
+  <div class="content-holder">
+
+    <div class="image-holder">
+      <img src="img/girl_personal_concierge.jpeg">
+    </div>
+    <div class="block_text">
+      <div>
+        <h3>Please hold on: </h3>
+        <p>If you would like to make a change to your order, feel free to connect with our customer service team on our
+          Contact Us page.
+          Please bear in mind that any changes made to your quote may cause a delay in the preparation of your quote of
+          one working day. </p>
+        <a href="#" class="btn_green">Got it</a>
+      </div>
+
+    </div>
+
+  </div>
+</div>
+
+<div class="modal_div hide modal_img modal_img_mini" id="next_order">
+  <div class="modal_close"></div>
+  <div class="content-holder">
+
+    <div class="image-holder">
+      <img src="img/girl_personal_concierge.jpeg">
+    </div>
+    <div class="block_text">
+      <div>
+        <h3>We noticed you have a pending order</h3>
+        <p>You can only have one pending order at a time. Check your pending order in Orders page.</p>
+        <a href="#" class="btn_green">Got it</a>
+      </div>
+
+    </div>
+
+  </div>
+</div>
+
+<div class="hide" id="overlay"></div>
+
+<div class="loading_screen"></div>
+<button class="to-top" type="button">Back to Top</button>
+
+<!--script type="text/javascript" src="//assets.freshdesk.com/widget/freshwidget.js"></script>
+<script type="text/javascript">
+            FreshWidget.init("", {"queryString": "&widgetType=popup&submitTitle=Send+Feedback&submitThanks=Thank+you+for+your+feedback", "utf8": "✓", "widgetType": "popup", "buttonType": "text", "buttonText": "Support", "buttonColor": "white", "buttonBg": "#009797", "alignment": "4", "offset": "250px", "submitThanks": "Thank you for your feedback", "formHeight": "500px", "url": "https://aoracs.freshdesk.com"} );
+</script-->
+
+
+<script src="js/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+        integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+        integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+        crossorigin="anonymous"></script>
+<script src="js/script.js"></script>
+<script src="js/stack.js?v=20181104"></script>
+<script src="js/validate.js"></script>
+<script src="js/modal.js?v=20181023"></script>
+<script src="js/main.js?v=20181107"></script>
+
+
+<script>
+  $(document).ready(function () {
+    if (typeof check_password_sec !== 'undefined' && $.isFunction(check_password_sec)) {
+      check_password_sec();
+    }
+  });
+</script>
+<script>
+  $(document).ready(function () {
+    $.ajaxSetup({
+      headers: {
+        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+      }
+    });
+
+    $('.submit-form').on('click', function (e) {
+      e.preventDefault();
+      $(this).closest('form').submit();
+      $('.dl_form_js1')[0].submit();
+      return false;
+    });
+
+    calculatePrice();
+
+    $('.cart__product-delete, .cart__product-del').on('click', function () {
+      var count_manual = $('.cart-manual-item').length;
+
+      $(this).parent().remove();
+
+      if ($('.cart-row, .cart__product, .cart-page-products').length < 1) {
+        $('.visible_when_cart_empty').show();
+        $('.hidden_when_cart_empty').hide();
+        $('.cart__notification').css('display', 'flex');
+      }
+
+      var th = $(this);
+      var data = th.closest('.cart-row, .cart__product').data();
+
+      $.ajax({
+        url: 'cart/delete',
+        type: 'POST',
+        data: data,
+        dataType: 'json',
+        success: function () {
+          var left_manual = $('.cart-manual-item').length;
+
+          if (count_manual == 1 && left_manual == 0) {
+            window.location.reload();
+          }
+
+          calculatePrice();
+        }
+      });
+    });
+
+    $('.cart__btn-plus, .cart__btn-minus').click(function () {
+      var th = $(this);
+      var parent = th.closest('.cart-row, .cart__product');
+
+      var qty = parent.find('.cart__amount-input');
+
+      var data = parent.data();
+      data.quantity = qty.val();
+
+      var q = parseInt(data.quantity);
+      if (isNaN(q) || q < 1) {
+        qty.val(1);
+        data.quantity = 1;
+      }
+
+      $.ajax({
+        url: 'cart/update',
+        type: 'POST',
+        data: data,
+        dataType: 'json',
+        success: function () {
+          calculatePrice();
+        }
+      });
+    });
+  });
+
+  function calculatePrice() {
+    var priceTotal = 0;
+    var itemCount = $('.js_list_cart .cart-row').length;
+    if (itemCount == 0) {
+      itemCount = $('.cart__products .cart__product').length;
+    }
+
+    if (itemCount == 0) {
+      $('.visible_when_cart_empty').show();
+      $('.hidden_when_cart_empty').hide();
+      $('.cart__notification').css('display', 'flex');
+    } else {
+      $('.visible_when_cart_empty').hide();
+      $('.hidden_when_cart_empty').show();
+    }
+
+    if (itemCount > 1) {
+      $('.cart-page__total-amount, .cart__total-amount').text(itemCount + ' items');
+    } else {
+      $('.cart-page__total-amount, .cart__total-amount').text(itemCount + ' item');
+    }
+
+    $('.js_list_cart .cart-page-product, .cart__products .cart__product').each(function () {
+      var priceItem = $(this).find('.orders-page-product__price, .cart__product-price').data('price');
+
+      if (typeof priceItem === 'undefined')
+        return;
+
+      var qty = $(this).find('.cart__amount-input').val();
+      priceTotal = priceTotal + (Number(priceItem) * qty);
+    });
+
+    if (priceTotal > 0)
+      $('.cart-page__total-price, .cart__total-price').text('USD ' + number_format(priceTotal));
+    else
+      $('.cart-page__total-price, .cart__total-price').text('');
+
+    if ($('#quotation_id').length == 0) {
+      $('.page-header__indicator, .slide-menu__indicator').html(itemCount);
+    }
+
+  }
+
+  function get_cart() {
+    var shipping_methods = '';
+    var shippings = $('.js-shpiping-method[type=radio]:checked');
+    for (var i = 0; i < shippings.length; i++) {
+      shipping_methods += $(shippings[i]).data('country_id') + '-' + $(shippings[i]).val() + '_';
+    }
+    $.ajax({
+      url: 'cart/info',
+      type: 'GET',
+      data: {
+        shipping: shipping_methods,
+        max_shipping_weight: $('#max_shipping_weight').val()
+      },
+      dataType: 'json',
+      success: function (response) {
+      },
+      error: function (response) {
+      },
+      complete: function (response) {
+        var data = response.responseJSON;
+        if (!data.success && data.message == 'empty_cart') {
+          $('.visible_when_cart_empty').show();
+          $('.hidden_when_cart_empty').hide();
+          $('.cart__notification').css('display', 'flex');
+        }
+        if (data.success && typeof(data.data.subprice) != 'undefined') {
+          if (data.data.error_products.length > 0) {
+            window.location.href = 'cart';
+          }
+          $('.p_currency').html(data.data.currency);
+          if (typeof(data.data.redirect_to_cart) != 'undefined' && data.data.redirect_to_cart) {
+            if (parseInt('0') > 0) {
+              window.location.href = '/quotation/0';
+            } else {
+              window.location.href = 'cart';
+            }
+          }
+          $('.order_subtotal').html(data.data.currency + ' ' + number_format(data.data.subprice));
+          $('.discount-total').html(parseFloat(data.data.discount) ? '- ' + data.data.currency + ' ' + number_format(data.data.discount) : 'N/A');
+          $('.order_total').html(data.data.currency + ' ' + number_format(data.data.total));
+          $('.insurance-total').html(parseFloat(data.data.insurance) ? data.data.currency + ' ' + number_format(data.data.insurance) : 'Free');
+          $('.service-total').html(parseFloat(data.data.service) && parseFloat(data.data.insurance) ? data.data.currency + ' ' + number_format(data.data.insurance + data.data.service) : 'N/A');
+          $('#gst_str').val(data.data.gst_str);
+          if (typeof(data.data.agent_fee) != 'undefined') {
+            $('#agent_fee').html('Agent Fee (' + data.data.agent_fee + '%)');
+          }
+          if (typeof(data.data.gst_noti) != 'undefined') {
+            $('#gst_noti').html(data.data.gst_noti);
+          }
+          if (typeof(data.data.check_gst) != 'undefined' && data.data.check_gst == 1) {
+            $('#show_gst').html('<span>Goods might be subjected to duty and taxes according to the law of your country</span>');
+            $('.gst-total').html('');
+          }
+          $('.order_subtotal2').html(data.data.currency + ' ' + number_format(parseFloat(data.data.total) - parseFloat(data.data.gst)));
+
+          if (!parseFloat(data.data.discount))
+            $('.aora_discount').hide();
+
+          var aora_fx_rate = parseFloat($('.fx-rate').html());
+          var total = data.data.total.toFixed(2);
+          var total_usd = total * (1 / aora_fx_rate);
+
+          var dbs_fx_rate = parseFloat($('.fx-dbs-rate').html());
+          var ocbc_fx_rate = parseFloat($('.fx-ocbc-rate').html());
+
+          var dbs_price = total_usd * dbs_fx_rate;
+          var ocbc_price = total_usd * ocbc_fx_rate;
+          var max_price = Math.max(dbs_price, ocbc_price);
+
+          var aora_fx_saving = max_price - total;
+          $('.fx-saving').html(number_format(aora_fx_saving));
+          $('.fx-dbs').html(number_format(dbs_price));
+          $('.fx-ocbc').html(number_format(ocbc_price));
+
+          $('.international_shipping').html(parseFloat(data.data.international_shipping) ? data.data.currency + ' ' + number_format(data.data.international_shipping) : 'Free')
+          $('#max_shipping_weight_international_price').val(data.data.max_shipping_weight_international_price);
+          $('.domestic_shipping').html(parseFloat(data.data.domestic_shipping) ? data.data.currency + ' ' + number_format(data.data.domestic_shipping) : 'Free')
+          var domestic = 0;
+          if (parseFloat(data.data.domestic_shipping)) {
+            domestic = parseFloat(data.data.domestic_shipping);
+          }
+          var internal = 0;
+          if (parseFloat(data.data.international_shipping)) {
+            internal = parseFloat(data.data.international_shipping);
+          }
+          internal += domestic;
+          $('.total_shipping').html(data.data.currency + ' ' + number_format(internal));
+
+          for (var i = 0; i < data.data.shipping_price.length; i++) {
+            var ship = data.data.shipping_price[i];
+            var shippings = $('.js-shpiping-method[type=radio]');
+            for (var j = 0; j < shippings.length; j++) {
+              if ($(shippings[j]).val() == ship.shipping_method_id
+                && $(shippings[j]).data('country_id') == ship.country_id) {
+                var htm = data.data.currency + ' <span class="shipping_rate">' + number_format(ship.price) + '</span>';
+                $(shippings[j]).parent().find('.shipping_rate').parent().html(htm);
+              }
+            }
+          }
+          calculate_total();
+        }
+      }
+    });
+  }
+
+  function number_format(number, decimals, dec_point, thousands_sep) {
+    var n = number, c = isNaN(decimals = Math.abs(decimals)) ? 2 : decimals;
+    var d = dec_point == undefined ? "." : dec_point;
+    var t = thousands_sep == undefined ? "," : thousands_sep, s = n < 0 ? "-" : "";
+    var i = parseInt(n = Math.abs(+n || 0).toFixed(c)) + "", j = (j = i.length) > 3 ? j % 3 : 0;
+    return s + (j ? i.substr(0, j) + t : "") + i.substr(j).replace(/(\d{3})(?=\d)/g, "$1" + t) + (c ? d + Math.abs(n - i).toFixed(c).slice(2) : "");
+  }
+
+  function check_handling() {
+    if ($('.handling_fee').length == 0) {
+      return;
+    }
+    $('.handling-fee-value').html('');
+    $('.handling_fee').hide();
+
+    var total_final = $('#ln_sub_total').html();
+    if (total_final == '') {
+      return;
+    }
+    var currency = total_final.substring(0, 3);
+    total_final = total_final.substring(4).replace(',', '').replace(',', '').replace('.', '');
+    var final_price = parseInt(total_final) / 100;
+
+    var handling = parseFloat($('#handling').val());
+    if (handling > 0) {
+      var handling_fee = final_price * handling / 100;
+      $('.handling-fee-value').html(currency + ' ' + number_format(handling_fee));
+      $('.handling_fee').show();
+    }
+  }
+</script>
+
+
+</body>
+</html>

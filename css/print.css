@@ -1,0 +1,24 @@
+/***************** Invoice Print Page CSS********************/
+.print-section{max-width: 1000px;margin: 0 auto;background: #f6f6f6;padding: 15px 50px 0px 50px;color: #666666;font-family: lato; font-size: 14px;letter-spacing:1.2px; line-height: 1.5;} 
+
+.in-head{display: table;width: 100%; padding: 10px 10px 10px 10px;}
+.in-head > div{display: table-cell; vertical-align: top; width: 50%;}
+.in-head > div.pr-right{text-align: right; font-size: 20px; text-transform: uppercase;font-weight: 600;letter-spacing: 1px;padding-top: 10px; }
+
+.print-section hr{border-top: 8px solid #c5d8d9; margin:10px 0;}
+
+.print-add p strong{font-size: 26px;padding-bottom: 0px;display: inline-block; font-weight: 900;}
+
+.prin-pay{padding: 15px 0;}
+.prin-pay h3{font-size: 26px;padding-bottom: 0px;display: inline-block; font-weight: 900; color: #529093}
+
+.pay-table table th,.pay-table table td{padding:5px 5px; vertical-align:top; }
+.pay-table table th{text-align:left;font-weight: 900; font-size: 18px; }
+
+.pay-table table td{font-size: 16px; letter-spacing: 1.5px;}
+
+.pay-table table tfoot td{padding: 0 5px;}
+.pay-table table tfoot tr td.price{padding: 5px 10px}
+.pr-foot p{text-align: center;}
+
+/***************** Invoice Print Page CSS 8 Sept 2018********************/

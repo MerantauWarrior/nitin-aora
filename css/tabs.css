@@ -1,0 +1,9 @@
+.tab-wrap .tab-content {
+  display: none !important;
+}
+
+.tab-wrap .tab-content.active {
+  display: block !important;
+}
+
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInRhYnMuc2FzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFFQTtFQUdFLHlCQUF1QjtDQUdPOztBQU5oQztFQU1HLDBCQUF3QjtDQUFHIiwiZmlsZSI6InRhYnMuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiQGltcG9ydCBcIl9taXhpbnNcIjtcblxuLnRhYi13cmFwIHtcblx0LnRhYi1jb250ZW50IHtcblxuXHRcdGRpc3BsYXk6IG5vbmUhaW1wb3J0YW50O1xuXHRcdCYuYWN0aXZlIHtcblxuXHRcdFx0ZGlzcGxheTogYmxvY2shaW1wb3J0YW50OyB9IH0gfVxuXG4iXX0= */
