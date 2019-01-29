@@ -598,15 +598,25 @@
     text-align: center;
     line-height: normal;
     font-size: 13px;
-    text-align: center;
 }
 .how-work-examples__item-text p{
     margin-bottom: 15px;
     font-weight: normal;
 }
+.how-work-examples__item-text p span{
+    display: inline-block;
+    vertical-align: top;
+}
 .how-work-examples__item-text b{
     font-weight: 600;
     color: #3B3838;
+}
+.how-work-examples__item-chechmark{
+    display: inline-block;
+    vertical-align: top;
+    width: 13px;
+    height: 13px;
+    background: url("../imgs/howPage/checkmark.svg") no-repeat center center;
 }
 
 /*new about us*/
