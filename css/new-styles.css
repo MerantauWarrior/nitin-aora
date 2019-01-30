@@ -196,6 +196,9 @@
     border-bottom: 5px solid #00B8B6;
     padding-bottom: 3px;
 }
+.how-work-step__title-long{
+    max-width: 190px;
+}
 .how-work-step-one{
     margin-top: 51px;
 }
@@ -409,8 +412,23 @@
     padding: 20px;
 }
 .how-work-thanx{
-    padding: 79px 0 71px 0;
-    background: url("../imgs/howPage/thanx.png") no-repeat 85% 50%, rgba(248, 248, 248, 0.8);
+    padding: 48px 0 38px 0;
+    /*background: url("../imgs/howPage/thanx.png") no-repeat 85% 50%, rgba(248, 248, 248, 0.8);*/
+    background-color: rgba(248, 248, 248, 0.8);
+}
+.how-work-thanx__content{
+    position: relative;
+    width: 100%;
+    max-width: 635px;
+    margin: 0 auto;
+    padding: 31px 0 33px 0;
+    background-color: rgba(255, 255, 255, 0.65);
+}
+.how-work-thanx__img{
+    position: absolute;
+    top: -8px;
+    right: -210px;
+    text-align: center;
 }
 .how-work-thanx__title{
     font-style: normal;
@@ -433,6 +451,13 @@
     font-size: 13px;
     text-align: center;
     color: #3B3838;
+}
+.how-work-thanx__description a{
+    color: inherit;
+    font-family:inherit;
+    line-height: normal;
+    font-size: inherit;
+    text-decoration: underline;
 }
 .how-work-rates{
     padding: 76px 0 114px 0;
@@ -2319,6 +2344,11 @@ tablets
         margin-right: 0;
         margin-bottom: 30px;
     }
+    .how-work-thanx__img {
+        position: relative;
+        top: 0;
+        right: 0;
+    }
     /*new about us*/
     .about-us-top__title{
         border: 1px solid #000;
@@ -2432,6 +2462,12 @@ tablets
     .about-us-values__item-title{
         margin-bottom: 10px;
     }
+    /*new how Aora works*/
+    .how-work-thanx__img {
+        position: absolute;
+        top: -8px;
+        right: -170px;
+    }
 }
 
 /*
@@ -2481,6 +2517,11 @@ mobiles
     .how-work-thanx{
         padding: 30px 15px;
         background: rgba(248, 248, 248, 0.8);
+    }
+    .how-work-thanx__img {
+        position: relative;
+        top: 0;
+        right: 0;
     }
     .how-work-rates{
         padding: 30px 15px;
