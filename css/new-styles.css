@@ -2319,6 +2319,17 @@ a.landing-merchants__coming-soon_3{
 }
 
 /*
+fixtures
+*/
+@media screen and (max-width: 1365px) and (min-width: 1200px){
+    .how-work-step-three__content-one, .how-work-step-three__content-three {
+        margin: 0 15px;
+    }
+    .how-work-step-three__content-two {
+        left: 39.5%;
+    }
+}
+/*
 tablets
 */
 @media screen and (max-width: 1024px){
