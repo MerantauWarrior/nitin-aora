@@ -2504,13 +2504,16 @@ mobiles
         min-height:auto;
     }
     /*new about us*/
-    .about-us-top{
-        padding: 50px 0;
-    }
+    /*.about-us-top{*/
+        /*padding: 50px 0;*/
+    /*}*/
     .about-us-top__title{
         margin-left: auto;
         margin-right: auto;
         border: 1px solid #000;
+    }
+    .about-us-hello {
+        padding: 23px 0;
     }
     .about-us-hello__img{
         float: none;
