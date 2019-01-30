@@ -620,12 +620,12 @@
 }
 
 /*new about us*/
-.about-us-top{
-    padding: 143px 0 142px 0;
-    background: url("../imgs/aboutPage/about-us-top.png") no-repeat center center;
-    -webkit-background-size: cover;
-    background-size: cover;
-}
+/*.about-us-top{*/
+    /*padding: 143px 0 142px 0;*/
+    /*background: url("../imgs/aboutPage/about-us-top.png") no-repeat center center;*/
+    /*-webkit-background-size: cover;*/
+    /*background-size: cover;*/
+/*}*/
 .about-us-top__title{
     width: 215px;
     height: 215px;
